@@ -1,0 +1,24 @@
+/algorithme tri par insertion 
+ tabint : INTEGER
+ taille : INTEGER
+ BIGIN 
+ procedure tri_insertion( tabint, taille)
+ i : INTEGER
+ j : INTEGER
+ t : INTEGER
+FOR i FROM 0 TO max STEP step  DO
+    t:= tabint [i]
+    j:= i
+
+ i de 0 à taille [i-1]
+
+WHILE (j >0 ET tabint[j-1]>t) DO
+    Tabint [j] := tabint [j-1]
+ j:= j-1
+END_WHILE
+
+ tabint [j] := t
+END FOR
+END
+END
+
