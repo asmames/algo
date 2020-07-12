@@ -1,0 +1,24 @@
+ALGORITHM Is_Palindrome
+
+FUNCTION palindrome(T: tab : ARRAY_OF CHAR[1..n]) : Booléen ;
+VAR
+ i,j : INTEGER  ;
+ res : Booléen ;
+  
+ BEGIN
+ i := 1;
+ j := n;
+ res := true;
+    WHILE ((res = true) and (i < j)) DO
+        IF (T[i] = T[j]) THEN
+            res= true ;
+            i = i + 1;
+            j = j - 1;
+        ELSE
+         res := false ;
+        END_IF
+    END_WHILE 
+    
+
+END
+
